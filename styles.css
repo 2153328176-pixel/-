@@ -461,6 +461,30 @@ body {
   outline-offset: 4px;
 }
 
+/* 下一页引导按钮 - 与 View My Work 风格一致 */
+.next-page-btn {
+  display: inline-block;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.15rem;
+  color: #4a4a52;
+  text-decoration: none;
+  padding: 0.65rem 1.85rem 0.75rem;
+  background: var(--yellow-fill);
+  border: 2.5px solid var(--yellow-border);
+  border-radius: 38% 18% 42% 22% / 28% 38% 32% 40%;
+  box-shadow: 2px 3px 0 rgba(212, 192, 74, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.5);
+  transform: rotate(-0.8deg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.next-page-btn:hover {
+  transform: rotate(0deg) translateY(-2px);
+  box-shadow: 3px 5px 0 rgba(212, 192, 74, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.6);
+}
+.next-page-btn:focus-visible {
+  outline: 2px solid var(--purple-role);
+  outline-offset: 4px;
+}
+
 /* 头像轻微浮动 */
 @keyframes avatar-float {
   0%,
